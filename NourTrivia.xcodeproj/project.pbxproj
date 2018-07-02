@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37ACC47141900DF42B909806 /* Pods_NourTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7783642BD7AB9A45FB89CA /* Pods_NourTrivia.framework */; };
+		5503340B966F0320CB2878D6 /* Pods_NourTriviaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99A64A092AB22C08A89F3D2 /* Pods_NourTriviaTests.framework */; };
 		C6F2DF9020EA3DD50013AEE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2DF8F20EA3DD50013AEE3 /* AppDelegate.swift */; };
 		C6F2DF9220EA3DD50013AEE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2DF9120EA3DD50013AEE3 /* ViewController.swift */; };
 		C6F2DF9520EA3DD50013AEE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F2DF9320EA3DD50013AEE3 /* Main.storyboard */; };
@@ -26,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B2863F0DACFC8B03AFA341E /* Pods-NourTriviaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NourTriviaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NourTriviaTests/Pods-NourTriviaTests.release.xcconfig"; sourceTree = "<group>"; };
+		8153D78353826A701BD523D6 /* Pods-NourTriviaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NourTriviaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NourTriviaTests/Pods-NourTriviaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA7783642BD7AB9A45FB89CA /* Pods_NourTrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NourTrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF9547CD41FA4062E02D88E /* Pods-NourTrivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NourTrivia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NourTrivia/Pods-NourTrivia.debug.xcconfig"; sourceTree = "<group>"; };
 		C6F2DF8C20EA3DD50013AEE3 /* NourTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NourTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F2DF8F20EA3DD50013AEE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6F2DF9120EA3DD50013AEE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		C6F2DFA020EA3DD70013AEE3 /* NourTriviaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NourTriviaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F2DFA420EA3DD70013AEE3 /* NourTriviaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NourTriviaTests.swift; sourceTree = "<group>"; };
 		C6F2DFA620EA3DD70013AEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCDBE04544E55BCC5D9F3CAE /* Pods-NourTrivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NourTrivia.release.xcconfig"; path = "Pods/Target Support Files/Pods-NourTrivia/Pods-NourTrivia.release.xcconfig"; sourceTree = "<group>"; };
+		F99A64A092AB22C08A89F3D2 /* Pods_NourTriviaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NourTriviaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37ACC47141900DF42B909806 /* Pods_NourTrivia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5503340B966F0320CB2878D6 /* Pods_NourTriviaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3996E968C10F1C7E4F7BBC31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFF9547CD41FA4062E02D88E /* Pods-NourTrivia.debug.xcconfig */,
+				DCDBE04544E55BCC5D9F3CAE /* Pods-NourTrivia.release.xcconfig */,
+				8153D78353826A701BD523D6 /* Pods-NourTriviaTests.debug.xcconfig */,
+				0B2863F0DACFC8B03AFA341E /* Pods-NourTriviaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		541C28E41264EB42D92A8DF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA7783642BD7AB9A45FB89CA /* Pods_NourTrivia.framework */,
+				F99A64A092AB22C08A89F3D2 /* Pods_NourTriviaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6F2DF8320EA3DD50013AEE3 = {
 			isa = PBXGroup;
 			children = (
 				C6F2DF8E20EA3DD50013AEE3 /* NourTrivia */,
 				C6F2DFA320EA3DD70013AEE3 /* NourTriviaTests */,
 				C6F2DF8D20EA3DD50013AEE3 /* Products */,
+				3996E968C10F1C7E4F7BBC31 /* Pods */,
+				541C28E41264EB42D92A8DF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6F2DFA920EA3DD70013AEE3 /* Build configuration list for PBXNativeTarget "NourTrivia" */;
 			buildPhases = (
+				A2C904A22FAD5772920D3B36 /* [CP] Check Pods Manifest.lock */,
 				C6F2DF8820EA3DD50013AEE3 /* Sources */,
 				C6F2DF8920EA3DD50013AEE3 /* Frameworks */,
 				C6F2DF8A20EA3DD50013AEE3 /* Resources */,
+				F4A99958FB3536F56851D0AA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6F2DFAC20EA3DD70013AEE3 /* Build configuration list for PBXNativeTarget "NourTriviaTests" */;
 			buildPhases = (
+				4C59786D050F058ADEA1D98A /* [CP] Check Pods Manifest.lock */,
 				C6F2DF9C20EA3DD70013AEE3 /* Sources */,
 				C6F2DF9D20EA3DD70013AEE3 /* Frameworks */,
 				C6F2DF9E20EA3DD70013AEE3 /* Resources */,
+				922C12C7D15B96E8459EC645 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +227,121 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C59786D050F058ADEA1D98A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NourTriviaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		922C12C7D15B96E8459EC645 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NourTriviaTests/Pods-NourTriviaTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAnimated/RxAnimated.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxStarscream/RxStarscream.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAnimated.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxStarscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NourTriviaTests/Pods-NourTriviaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2C904A22FAD5772920D3B36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NourTrivia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4A99958FB3536F56851D0AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NourTrivia/Pods-NourTrivia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAnimated/RxAnimated.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxStarscream/RxStarscream.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAnimated.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxStarscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NourTrivia/Pods-NourTrivia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6F2DF8820EA3DD50013AEE3 /* Sources */ = {
@@ -356,6 +507,7 @@
 		};
 		C6F2DFAA20EA3DD70013AEE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF9547CD41FA4062E02D88E /* Pods-NourTrivia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -373,6 +525,7 @@
 		};
 		C6F2DFAB20EA3DD70013AEE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCDBE04544E55BCC5D9F3CAE /* Pods-NourTrivia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -390,6 +543,7 @@
 		};
 		C6F2DFAD20EA3DD70013AEE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8153D78353826A701BD523D6 /* Pods-NourTriviaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -410,6 +564,7 @@
 		};
 		C6F2DFAE20EA3DD70013AEE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B2863F0DACFC8B03AFA341E /* Pods-NourTriviaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
