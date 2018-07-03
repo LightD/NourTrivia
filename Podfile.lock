@@ -29,6 +29,7 @@ PODS:
   - RxSwiftExt/Core (3.2.0):
     - RxSwift (~> 4.0)
   - Starscream (3.0.5)
+  - youtube-ios-player-helper (0.1.6)
   - YouTubePlayer (0.4.0)
 
 DEPENDENCIES:
@@ -43,6 +44,7 @@ DEPENDENCIES:
   - RxSwift
   - RxSwiftExt
   - Starscream
+  - youtube-ios-player-helper
   - YouTubePlayer
 
 SPEC REPOS:
@@ -59,6 +61,7 @@ SPEC REPOS:
     - RxSwift
     - RxSwiftExt
     - Starscream
+    - youtube-ios-player-helper
     - YouTubePlayer
 
 SPEC CHECKSUMS:
@@ -74,8 +77,9 @@ SPEC CHECKSUMS:
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   RxSwiftExt: 64b7140124629a6a084159735f3714f0fb1c61d6
   Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
   YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: 8ce343307ea52d097220f307f8d5f6c6efe668f3
+PODFILE CHECKSUM: 23f691052b6d102c0b35d47f4fb723bf12c74b2d
 
 COCOAPODS: 1.5.3

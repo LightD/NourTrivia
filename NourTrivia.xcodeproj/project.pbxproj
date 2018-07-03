@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		37ACC47141900DF42B909806 /* Pods_NourTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7783642BD7AB9A45FB89CA /* Pods_NourTrivia.framework */; };
 		5503340B966F0320CB2878D6 /* Pods_NourTriviaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99A64A092AB22C08A89F3D2 /* Pods_NourTriviaTests.framework */; };
+		C6C1F90020EAE0270010FF0A /* LiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C1F8FF20EAE0270010FF0A /* LiveViewModel.swift */; };
+		C6C1F90320EAE98D0010FF0A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C1F90220EAE98D0010FF0A /* R.generated.swift */; };
+		C6C1F90520EAEDB70010FF0A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C1F90420EAEDB70010FF0A /* AVFoundation.framework */; };
+		C6C30BF520EADC35002E3951 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C30BF420EADC35002E3951 /* LandingViewController.swift */; };
+		C6C30BF920EADD5E002E3951 /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6C30BF820EADD5E002E3951 /* LandingViewController.xib */; };
+		C6C30BFC20EADDD6002E3951 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C30BFB20EADDD6002E3951 /* LiveViewController.swift */; };
+		C6C30BFE20EADE33002E3951 /* LiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6C30BFD20EADE33002E3951 /* LiveViewController.xib */; };
 		C6F2DF9020EA3DD50013AEE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2DF8F20EA3DD50013AEE3 /* AppDelegate.swift */; };
-		C6F2DF9220EA3DD50013AEE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2DF9120EA3DD50013AEE3 /* ViewController.swift */; };
-		C6F2DF9520EA3DD50013AEE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F2DF9320EA3DD50013AEE3 /* Main.storyboard */; };
 		C6F2DF9720EA3DD70013AEE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F2DF9620EA3DD70013AEE3 /* Assets.xcassets */; };
 		C6F2DF9A20EA3DD70013AEE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F2DF9820EA3DD70013AEE3 /* LaunchScreen.storyboard */; };
 		C6F2DFA520EA3DD70013AEE3 /* NourTriviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F2DFA420EA3DD70013AEE3 /* NourTriviaTests.swift */; };
@@ -32,10 +37,15 @@
 		8153D78353826A701BD523D6 /* Pods-NourTriviaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NourTriviaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NourTriviaTests/Pods-NourTriviaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA7783642BD7AB9A45FB89CA /* Pods_NourTrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NourTrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF9547CD41FA4062E02D88E /* Pods-NourTrivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NourTrivia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NourTrivia/Pods-NourTrivia.debug.xcconfig"; sourceTree = "<group>"; };
+		C6C1F8FF20EAE0270010FF0A /* LiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewModel.swift; sourceTree = "<group>"; };
+		C6C1F90220EAE98D0010FF0A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		C6C1F90420EAEDB70010FF0A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C6C30BF420EADC35002E3951 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		C6C30BF820EADD5E002E3951 /* LandingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
+		C6C30BFB20EADDD6002E3951 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		C6C30BFD20EADE33002E3951 /* LiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveViewController.xib; sourceTree = "<group>"; };
 		C6F2DF8C20EA3DD50013AEE3 /* NourTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NourTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F2DF8F20EA3DD50013AEE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6F2DF9120EA3DD50013AEE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C6F2DF9420EA3DD50013AEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6F2DF9620EA3DD70013AEE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6F2DF9920EA3DD70013AEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6F2DF9B20EA3DD70013AEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C1F90520EAEDB70010FF0A /* AVFoundation.framework in Frameworks */,
 				37ACC47141900DF42B909806 /* Pods_NourTrivia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,10 +91,39 @@
 		541C28E41264EB42D92A8DF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6C1F90420EAEDB70010FF0A /* AVFoundation.framework */,
 				BA7783642BD7AB9A45FB89CA /* Pods_NourTrivia.framework */,
 				F99A64A092AB22C08A89F3D2 /* Pods_NourTriviaTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6C30BF220EADC09002E3951 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C6C30BFA20EADDC2002E3951 /* Live */,
+				C6C30BF320EADC14002E3951 /* Landing */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C6C30BF320EADC14002E3951 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				C6C30BF420EADC35002E3951 /* LandingViewController.swift */,
+				C6C30BF820EADD5E002E3951 /* LandingViewController.xib */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		C6C30BFA20EADDC2002E3951 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				C6C30BFB20EADDD6002E3951 /* LiveViewController.swift */,
+				C6C30BFD20EADE33002E3951 /* LiveViewController.xib */,
+				C6C1F8FF20EAE0270010FF0A /* LiveViewModel.swift */,
+			);
+			path = Live;
 			sourceTree = "<group>";
 		};
 		C6F2DF8320EA3DD50013AEE3 = {
@@ -109,9 +149,9 @@
 		C6F2DF8E20EA3DD50013AEE3 /* NourTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				C6C1F90220EAE98D0010FF0A /* R.generated.swift */,
+				C6C30BF220EADC09002E3951 /* Scenes */,
 				C6F2DF8F20EA3DD50013AEE3 /* AppDelegate.swift */,
-				C6F2DF9120EA3DD50013AEE3 /* ViewController.swift */,
-				C6F2DF9320EA3DD50013AEE3 /* Main.storyboard */,
 				C6F2DF9620EA3DD70013AEE3 /* Assets.xcassets */,
 				C6F2DF9820EA3DD70013AEE3 /* LaunchScreen.storyboard */,
 				C6F2DF9B20EA3DD70013AEE3 /* Info.plist */,
@@ -136,6 +176,7 @@
 			buildConfigurationList = C6F2DFA920EA3DD70013AEE3 /* Build configuration list for PBXNativeTarget "NourTrivia" */;
 			buildPhases = (
 				A2C904A22FAD5772920D3B36 /* [CP] Check Pods Manifest.lock */,
+				C6C1F90120EAE9670010FF0A /* ShellScript */,
 				C6F2DF8820EA3DD50013AEE3 /* Sources */,
 				C6F2DF8920EA3DD50013AEE3 /* Frameworks */,
 				C6F2DF8A20EA3DD50013AEE3 /* Resources */,
@@ -215,7 +256,8 @@
 			files = (
 				C6F2DF9A20EA3DD70013AEE3 /* LaunchScreen.storyboard in Resources */,
 				C6F2DF9720EA3DD70013AEE3 /* Assets.xcassets in Resources */,
-				C6F2DF9520EA3DD50013AEE3 /* Main.storyboard in Resources */,
+				C6C30BF920EADD5E002E3951 /* LandingViewController.xib in Resources */,
+				C6C30BFE20EADE33002E3951 /* LiveViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +306,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -279,6 +322,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
@@ -305,6 +349,19 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C6C1F90120EAE9670010FF0A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
 		F4A99958FB3536F56851D0AA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,6 +379,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -335,6 +393,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -348,8 +407,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6F2DF9220EA3DD50013AEE3 /* ViewController.swift in Sources */,
+				C6C30BF520EADC35002E3951 /* LandingViewController.swift in Sources */,
+				C6C1F90020EAE0270010FF0A /* LiveViewModel.swift in Sources */,
+				C6C30BFC20EADDD6002E3951 /* LiveViewController.swift in Sources */,
 				C6F2DF9020EA3DD50013AEE3 /* AppDelegate.swift in Sources */,
+				C6C1F90320EAE98D0010FF0A /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,14 +434,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C6F2DF9320EA3DD50013AEE3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6F2DF9420EA3DD50013AEE3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C6F2DF9820EA3DD70013AEE3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

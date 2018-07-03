@@ -19,6 +19,7 @@ def shared_pods
     pod 'Starscream'
     pod 'YouTubePlayer'
     
+    pod 'youtube-ios-player-helper'
 end
 
 target 'NourTrivia' do
