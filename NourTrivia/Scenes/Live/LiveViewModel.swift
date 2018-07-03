@@ -61,7 +61,7 @@ class LiveViewModel: LiveViewModelType, LiveViewModelInputs, LiveViewModelOutput
         self.avPlayer.play()
     }
     
-    private func bind() {        
+    private func bind() {
         socket.rx.response
         .filter { (event) -> Bool in
             switch event {

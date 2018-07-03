@@ -27,7 +27,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpS-F2-IVh">
-                    <rect key="frame" x="152" y="298" width="70" height="70"/>
+                    <rect key="frame" x="152" y="160" width="70" height="70"/>
                     <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="70" id="gNw-rP-6x4"/>
@@ -37,7 +37,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="RpS-F2-IVh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="40B-DN-zac"/>
+                <constraint firstItem="RpS-F2-IVh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="140" id="9hq-eO-iQm"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="zEr-30-W6W" secondAttribute="bottom" id="FD2-Q3-dDz"/>
                 <constraint firstItem="RpS-F2-IVh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZhJ-yz-rLE"/>
                 <constraint firstItem="zEr-30-W6W" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ng4-Tj-Hfi"/>
