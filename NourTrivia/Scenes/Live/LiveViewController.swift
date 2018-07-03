@@ -11,13 +11,16 @@ import UIKit
 import RxSwift
 import RxCocoa
 import RxAnimated
-import youtube_ios_player_helper
+import AVFoundation
 
 class LiveViewController: UIViewController {
     var disposeBag = DisposeBag()
     
-    @IBOutlet weak var youtubePlayerView: YTPlayerView!
+    @IBOutlet weak var youtubePlayerView: UIView!
     @IBOutlet weak var closeButton: UIButton!
+    
+    var avplayer: AVPlayer!
+    var avplayerLayer: AVPlayerLayer!
     
     var liveViewModel: LiveViewModelType!
     
@@ -49,47 +52,27 @@ class LiveViewController: UIViewController {
     }
     
     private func loadVideo() {
-//        let myVideoURL = URL(string: "https://www.youtube.com/watch?v=wQg3bXrVLtg")
-        youtubePlayerView.load(withVideoId: "QPDX91iJ_RA")
-        youtubePlayerView.playVideo()
-        youtubePlayerView.delegate = self
-//        youtubePlayerView.loadVideoURL(myVideoURL!)
-//        youtubePlayerView.delegate = self
+        
+        let url = URL(string: "http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8")!
+        let playerItem = AVPlayerItem(url: url)
+        
+        self.avplayer = AVPlayer(playerItem: playerItem)
+        
+        self.avplayerLayer = AVPlayerLayer(player: self.avplayer)
+        
+        self.avplayer.replaceCurrentItem(with: playerItem)
+        
+        self.avplayer.play()
+        self.avplayer.isMuted = true
+        self.youtubePlayerView
+            .layer.insertSublayer(self.avplayerLayer, at: 0)
+        
+        
     }
     
-}
-
-extension LiveViewController: YTPlayerViewDelegate {
-    func playerViewDidBecomeReady(_ playerView: YTPlayerView) {
-        debugPrint("ready..")
-    }
     
-    func playerView(_ playerView: YTPlayerView, didChangeTo state: YTPlayerState) {
-        switch state {
-        case .unstarted:
-            playerView.playVideo()
-        case .ended:
-            playerView.playVideo()
-        default:
-            break
-        }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.avplayerLayer.frame = self.youtubePlayerView.bounds
     }
 }
-
-//extension LiveViewController: YouTubePlayerDelegate {
-//    func playerReady(_ videoPlayer: YouTubePlayerView) {
-//        videoPlayer.mute()
-//        videoPlayer.play()
-////        videoPlayer.play()
-//    }
-//
-//    func playerStateChanged(_ videoPlayer: YouTubePlayerView, playerState: YouTubePlayerState) {
-//        switch playerState {
-//        case .Unstarted:
-//            videoPlayer.play()
-//        case .Ended:
-//            videoPlayer.seekTo(0, seekAhead: false)
-//        default: break
-//        }
-//    }
-//}

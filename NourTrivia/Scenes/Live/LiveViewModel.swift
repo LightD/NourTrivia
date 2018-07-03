@@ -51,7 +51,7 @@ class LiveViewModel: LiveViewModelType, LiveViewModelInputs, LiveViewModelOutput
     init() {
         socket = WebSocket(url: URL(string: "ws://demos.kaazing.com/echo")!)
         socket.connect()
-        let item = AVPlayerItem(url: URL(string: "http://stream.radioreklama.bg:80/radio1.opus")!)
+        let item = AVPlayerItem(url: URL(string: "http://icecast.maxxwave.co.uk/lcr_aac")!)
         self.avPlayer = AVPlayer(playerItem: item)
     }
     
@@ -61,22 +61,7 @@ class LiveViewModel: LiveViewModelType, LiveViewModelInputs, LiveViewModelOutput
         self.avPlayer.play()
     }
     
-    private func bind() {
-        self.avPlayer.rx.observe(AVPlayerItemStatus.self, "status", options: [.new])
-            .subscribe(onNext: { [weak self] status in
-                switch status {
-                case let .some(stat):
-                    switch stat{
-                    case .readyToPlay:
-                        self?.avPlayer.play()
-                    default: break
-                    }
-                default: break
-                }
-                debugPrint(status)
-            })
-            .disposed(by: self.disposeBag)
-        
+    private func bind() {        
         socket.rx.response
         .filter { (event) -> Bool in
             switch event {
