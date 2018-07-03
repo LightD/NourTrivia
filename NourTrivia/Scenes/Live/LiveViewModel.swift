@@ -49,7 +49,7 @@ class LiveViewModel: LiveViewModelType, LiveViewModelInputs, LiveViewModelOutput
     }
     
     init() {
-        socket = WebSocket(url: URL(string: "ws://demos.kaazing.com/echo")!)
+        socket = WebSocket(url: URL(string: "ws://13.250.100.97:40510")!)
         socket.connect()
         let item = AVPlayerItem(url: URL(string: "http://icecast.maxxwave.co.uk/lcr_aac")!)
         self.avPlayer = AVPlayer(playerItem: item)
