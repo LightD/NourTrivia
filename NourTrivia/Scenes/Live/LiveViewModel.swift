@@ -49,7 +49,7 @@ class LiveViewModel: LiveViewModelType, LiveViewModelInputs, LiveViewModelOutput
     }
     
     init() {
-        socket = WebSocket(url: URL(string: "ws://13.250.100.97:40510")!)
+        socket = WebSocket(url: URL(string: "ws://demos.kaazing.com/echo")!)
         socket.connect()
         let item = AVPlayerItem(url: URL(string: "http://icecast.maxxwave.co.uk/lcr_aac")!)
         self.avPlayer = AVPlayer(playerItem: item)
@@ -57,8 +57,10 @@ class LiveViewModel: LiveViewModelType, LiveViewModelInputs, LiveViewModelOutput
     
     func viewDidLoad() {
         self.bind()
+        self.startPopTimer()
         self.avPlayer.volume = 1.0
         self.avPlayer.play()
+        
     }
     
     private func bind() {
@@ -84,6 +86,15 @@ class LiveViewModel: LiveViewModelType, LiveViewModelInputs, LiveViewModelOutput
             self?.isCloseButtonHiddenRelay.accept(true)
             self?.timerDisposable = nil
         })
+    }
+    
+    private func startPopTimer() {
+        Observable<Int>
+            .interval(10, scheduler: SerialDispatchQueueScheduler(internalSerialQueueName: "popTimerQueue"))
+            .subscribe(onNext: { [weak self] _ in
+                self?.socket.write(string: "pop")
+            })
+            .disposed(by: disposeBag)
     }
     
     func closeButtonTapped() {
